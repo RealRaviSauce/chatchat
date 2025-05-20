@@ -2,7 +2,7 @@
 
 A Next.js-based chatbot component for collecting project information from clients.
 
-## Setup
+## Local Development Setup
 
 1. Install dependencies:
 ```bash
@@ -18,6 +18,15 @@ NEXT_PUBLIC_OPENAI_API_KEY=your_api_key_here
 ```bash
 npm run dev
 ```
+
+## Vercel Deployment
+
+1. Push your code to GitHub
+2. Import your repository in Vercel
+3. Add the following environment variable in Vercel dashboard:
+   - Name: `NEXT_PUBLIC_OPENAI_API_KEY`
+   - Value: Your OpenAI API key
+4. Deploy!
 
 ## Usage
 
@@ -41,4 +50,4 @@ export default function Page() {
 
 ## Environment Variables
 
-- `NEXT_PUBLIC_OPENAI_API_KEY`: Your OpenAI API key 
+- `NEXT_PUBLIC_OPENAI_API_KEY`: Your OpenAI API key (set in Vercel dashboard for production) 
